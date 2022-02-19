@@ -1,0 +1,13 @@
+@import 'styles/variables';
+
+.navigation-bar {
+  margin: 1rem 0;
+
+  .nav-link {
+    color: $black !important;
+  }
+
+  .nav-link:hover {
+    color: $orange !important;
+  }
+}
