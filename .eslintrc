@@ -11,14 +11,14 @@
   },
   "extends": [
     "airbnb-typescript",
-    "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
     "prettier",
-    "prettier/react",
-    "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
-    "plugin:import/recommended"
+    "plugin:import/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
   ],
   "plugins": ["react", "react-hooks", "@typescript-eslint", "jest"],
   "env": {
@@ -40,6 +40,7 @@
         "endOfLine": "auto"
       }
     ],
+    "import/no-unresolved": "warn",
     "import/extensions": [
       "error",
       "ignorePackages",
