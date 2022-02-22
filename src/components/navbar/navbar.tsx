@@ -1,7 +1,8 @@
 import React from 'react';
-import { Navbar, Container, NavDropdown, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap';
 
 import Link from 'components/link';
+import Button from 'components/button';
 import { ReactComponent as Brand } from 'assets/images/brands/brand4.svg';
 
 import './navbar.scss';
@@ -32,6 +33,13 @@ const NavigationBar = () => {
                 <Link to="tried-recipes">Tried Recipes</Link>
               </NavDropdown.Item>
             </NavDropdown>
+          </Nav>
+
+          <Nav>
+            <Button className="login" variant="outlined">
+              Login
+            </Button>
+            <Button className="register">Join for free</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

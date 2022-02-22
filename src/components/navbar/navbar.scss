@@ -10,4 +10,16 @@
   .nav-link:hover {
     color: $orange !important;
   }
+
+  @media screen and (min-width: 990px) {
+    .login {
+      margin-right: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .login {
+      margin-bottom: 0.5rem;
+    }
+  }
 }
