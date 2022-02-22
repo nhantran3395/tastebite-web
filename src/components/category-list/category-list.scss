@@ -1,0 +1,19 @@
+@import 'styles/variables';
+
+.category-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  span {
+    margin-top: 1rem;
+    font-weight: $font-weight-semibold;
+  }
+
+  cursor: pointer;
+}
+
+.category-list {
+  margin-top: 1rem;
+}

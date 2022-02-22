@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Button from 'components/button';
+import CategoryList from 'components/category-list';
 
 const Landing = () => {
   return (
     <>
-      <h1>Mighty Super Cheesecake</h1>
-      <Button>Find Recipes</Button>
+      <h2>Popular Categories</h2>
+      <CategoryList />
     </>
   );
 };
