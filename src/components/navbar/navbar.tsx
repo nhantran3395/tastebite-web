@@ -4,26 +4,12 @@ import { Navbar, Container, NavDropdown, Nav, Form } from 'react-bootstrap';
 import Link from 'components/link';
 import Button from 'components/button';
 import Modal from 'components/modal';
+import LoginForm from 'components/auth-form/login-form';
+import RegisterForm from 'components/auth-form/register-form';
 import useModal from 'components/modal/modal.hook';
 import { ReactComponent as Brand } from 'assets/images/brands/brand4.svg';
 
 import './navbar.scss';
-
-const AuthForm = () => (
-  <Form>
-    <Form.Group className="mb-3" controlId="formBasicEmail">
-      <Form.Control type="email" placeholder="Email" />
-    </Form.Group>
-
-    <Form.Group className="mb-3" controlId="formBasicPassword">
-      <Form.Control type="password" placeholder="Password" />
-    </Form.Group>
-
-    <Button variant="primary" type="submit">
-      Submit
-    </Button>
-  </Form>
-);
 
 const NavigationBar = () => {
   const {
@@ -78,12 +64,17 @@ const NavigationBar = () => {
         </Container>
       </Navbar>
 
-      <Modal show={isLoginModalOpen} onHide={closeLoginModal} title={'Login'} body={<AuthForm />} />
+      <Modal
+        show={isLoginModalOpen}
+        onHide={closeLoginModal}
+        title={'Login'}
+        body={<LoginForm />}
+      />
       <Modal
         show={isRegisterModalOpen}
         onHide={closeRegisterModal}
         title={'Register'}
-        body={<AuthForm />}
+        body={<RegisterForm />}
       />
     </>
   );
